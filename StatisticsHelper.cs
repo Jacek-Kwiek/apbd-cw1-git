@@ -14,4 +14,17 @@ public static class StatisticsHelper
     {
         return (double)CalculateSum(numbers)/numbers.Length;
     }
+
+    public static int CalculateMax(int[] numbers)
+    {
+        int max = numbers[0];
+        for(int i=1; i<numbers.Length; i++)
+        {
+            if (numbers[i] > max)
+            {
+                max=numbers[i];
+            }
+        }
+        return max;
+    }
 }
